@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Mi az a MySQL?</title>
+    
+</head>
+<body>
+    <h1>Mi az a MySQL?</h1>
+    <p>A <strong>MySQL</strong> egy nyílt forráskódú relációs adatbázis-kezelő rendszer. Leggyakrabban webes alkalmazásokban használják, például a PHP és a WordPress mellett.</p>
+
+    <h2>Főbb jellemzők:</h2>
+    <ul>
+        <li>Gyors és megbízható</li>
+        <li>Támogatja az SQL (Structured Query Language) használatát</li>
+        <li>Széles körben használják webfejlesztésben</li>
+        <li>Ingyenes (a közösségi verzió)</li>
+    </ul>
+
+    <h2>Egyszerű MySQL parancsok:</h2>
+    <p><strong>Adatbázis létrehozása:</strong></p>
+    <pre><code>CREATE DATABASE webshop;</code></pre>
+
+    <p><strong>Tábla létrehozása:</strong></p>
+    <pre><code>
+CREATE TABLE termekek (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nev VARCHAR(100),
+    ar INT
+);
+    </code></pre>
+
+    <p><strong>Adat beszúrása:</strong></p>
+    <pre><code>INSERT INTO termekek (nev, ar) VALUES ('Laptop', 250000);</code></pre>
+
+    <p><strong>Adatok lekérdezése:</strong></p>
+    <pre><code>SELECT * FROM termekek;</code></pre>
+
+    <footer>
+        <p>Készítette: ChatGPT | © 2025</p>
+    </footer>
+</body>
+</html>
